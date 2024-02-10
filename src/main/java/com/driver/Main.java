@@ -3,21 +3,21 @@ package com.driver;
 public class Main {
 
     public static void main(String[] args) {
-        classB b=new classB();
-        b.meth();
+        B b=new classB();
+        System.out.println( b.meth());
     }
 }
-class classA
+class A
 {
-    public void meth()
+    public String meth()
     {
-        System.out.println("Invoking method from class A");
+        return "Invoking method from class A";
     }
 }
-class classB extends classA
+class B extends A
 {
-    public void meth()
+    public String meth()
     {
-        System.out.println("Method is overridden in Extendend class B");
+        return "Method is overridden in Extendend class B";
     }
 }
