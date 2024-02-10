@@ -1,4 +1,6 @@
 package com.driver;
+import com.driver.A;
+import com.driver.B;
 
 class A {
     public String meth() {
