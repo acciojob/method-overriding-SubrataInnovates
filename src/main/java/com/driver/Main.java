@@ -3,18 +3,18 @@ package com.driver;
 public class Main {
 
     public static void main(String[] args) {
-        B b=new B();
+        classB b=new classB();
         b.meth();
     }
 }
-class A
+class classA
 {
     public void meth()
     {
         System.out.println("Invoking method from class A");
     }
 }
-class B extends A
+class classB extends classA
 {
     public void meth()
     {
